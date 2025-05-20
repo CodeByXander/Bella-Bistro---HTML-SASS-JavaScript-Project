@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Bella Bistro | Bookings</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+
+    <div class="booking-hero-cover">
+      <header class="contact-head">
+        <nav>
+          <div class="logo">
+            <h1>Bella Bistro</h1>
+          </div>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Pages/menu.html">Menu</a></li>
+            <li><a href="../Pages/contact.html">Contact</a></li>
+            <li>
+              <a href="../Pages/bookings.html" class="active">Book Now</a>
+            </li>
+            <li><a href="../Pages/saved.html">Saved</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- BOOKING FORM -->
+
+      <section class="booking-form">
+        <div class="booking-form-heading">
+          <h2>Make your Reservation</h2>
+          <p>Make a reservation by filling out the form below.</p>
+        </div>
+
+        <div class="form-wrapper">
+          <form method="post">
+            <div class="row1">
+              <div class="form-group">
+                <label for="firstname">First name:</label>
+                <input type="text" id="firstname" name="first_name" />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" />
+              </div>
+            </div>
+            <div class="row2">
+              <div class="form-group">
+                <label for="date-time">Date & Time:</label>
+                <input type="datetime-local" id="date-time" name="date-time" />
+              </div>
+              <div class="form-group">
+                <label for="number-of-people">Number of People:</label>
+                <select name="number-of-people" id="number-of-people">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7+">More than 6</option>
+                </select>
+              </div>
+            </div>
+            <div class="row3">
+              <div class="radio-group">
+                <input type="radio" id="indoor" name="seating" value="indoor" />
+                  <label for="indoor">Indoor</label>
+              </div>
+               
+              <div class="radio-group">
+                <input type="radio" id="outdoor" name="seating" value="outdoor" />
+                  <label for="outdoor">Outdoor</label>
+              </div>
+            </div>
+            <div class="row4">
+              <div class="form-group">
+                <label for="special-requests">Special Requests:</label>
+                <textarea name="special-requests" id="special-requests"></textarea>
+              </div>
+            </div>
+            <button type="submit">Book Now</button>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-links">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Pages/menu.html">Menu</a></li>
+            <li><a href="../Pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="contact-info">
+          <ul>
+            <li>123 Main Street</li>
+            <li><a href="">000 123 1234</a></li>
+            <li><a href="">hello@bellabistro.co.za</a></li>
+          </ul>
+        </div>
+        <div class="socials">
+          <ul>
+            <li>
+              <a href="https://www.intagram.com" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com" target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <h3>Copyright &copy; 2025 Bella Bistro</h3>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

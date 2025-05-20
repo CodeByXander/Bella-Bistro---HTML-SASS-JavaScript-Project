@@ -1,0 +1,36 @@
+// FONT FAMILIES
+
+$--ff-logo: "Playfair";
+$--ff-headings: "Playfair", serif;
+$--ff-body: "Lato", sans-serif;
+
+// FONT SIZES
+
+$--fs-logo: 5rem;
+$--fs-heading-1: 2.5rem;
+$--fs-heading-2: 5rem;
+$--fs-heading-3: 3rem;
+$--fs-heading-4: 2.5rem;
+$--fs-heading-5: 2rem;
+$--fs-body: 1.8rem;
+$--fs-nav: 1.8rem;
+$--fs-button: 1.6rem;
+$--fs-small: 1.2rem;
+
+// COLORS
+
+$--clr-primary: #8b0000;
+$--clr-secondary: #fff8f0;
+$--clr-accent: #c8a165;
+$--clr-text: #333333;
+$--clr-dark: #222222;
+$--clr-light: #eeeeee;
+$--clr-white: #ffffff;
+
+// UTILITY
+
+.active {
+  text-decoration: underline wavy $--clr-primary;
+  text-underline-offset: 0.5rem;
+  text-decoration-thickness: 3px;
+}

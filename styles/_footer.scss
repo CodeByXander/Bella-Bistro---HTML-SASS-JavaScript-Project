@@ -1,0 +1,117 @@
+footer {
+  background-color: $--clr-dark;
+  color: $--clr-light;
+
+  h3 {
+    text-align: center;
+    font-family: $--ff-body;
+    font-size: $--fs-small;
+    padding: 1rem;
+    background-color: $--clr-text;
+    letter-spacing: 0.2rem;
+  }
+
+  a.active {
+    text-decoration: underline;
+  }
+}
+
+.footer-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem 0rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+
+  .footer-links {
+    ul {
+      list-style: none;
+
+      li {
+        padding: 1rem;
+      }
+
+      a {
+        color: $--clr-light;
+        font-family: $--ff-body;
+        font-size: $--fs-button;
+        text-decoration: none;
+      }
+
+      a.active {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+      }
+    }
+  }
+
+  .contact-info {
+    font-family: $--ff-body;
+    font-size: $--fs-button;
+
+    ul {
+      list-style: none;
+
+      li {
+        padding: 1rem;
+        color: $--clr-light;
+        font-family: $--ff-body;
+        font-size: $--fs-button;
+      }
+
+      a {
+        color: $--clr-light;
+        font-family: $--ff-body;
+        font-size: $--fs-button;
+        text-decoration: none;
+      }
+    }
+  }
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      li {
+        padding: 0rem 2rem;
+        margin: 1rem;
+        text-align: center;
+        line-height: 5rem;
+        font-size: 3rem;
+        cursor: pointer;
+        background-color: $--clr-dark;
+        border-radius: 0.5rem;
+
+        &:hover {
+          background-color: $--clr-light;
+
+          a {
+            color: $--clr-dark;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          color: $--clr-light;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (width < 760px) {
+  .footer-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+
+    text-align: center;
+  }
+}

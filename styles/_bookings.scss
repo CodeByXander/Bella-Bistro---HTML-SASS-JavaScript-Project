@@ -1,0 +1,175 @@
+.booking-hero-cover {
+  min-height: 100vh;
+  width: 100%;
+
+  background-image: url(../Assets/Images/contact-header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.booking-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  margin: 8rem auto;
+  padding: 5rem;
+  background-color: $--clr-text;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+  h2 {
+    font-family: $--ff-headings;
+    font-size: $--fs-heading-2;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: $--clr-light;
+  }
+
+  p {
+    font-family: $--ff-body;
+    font-size: $--fs-body;
+    text-align: center;
+    margin-bottom: 5rem;
+    text-decoration: underline 2px $--clr-light;
+    text-underline-offset: 1rem;
+    color: $--clr-light;
+  }
+
+  .form-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    color: $--clr-light;
+
+    form {
+      width: 100%;
+    }
+
+    label {
+      font-family: $--ff-body;
+      font-size: $--fs-body;
+      margin-bottom: 0.5rem;
+      width: 100%;
+    }
+
+    input {
+      font-family: $--ff-body;
+      font-size: $--fs-button;
+      height: 3rem;
+      margin-bottom: 1.2rem;
+      width: 100%;
+      padding: 1rem;
+    }
+
+    select {
+      font-family: $--ff-body;
+      font-size: $--fs-button;
+      height: 3rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .row1,
+    .row2,
+    .row4 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      gap: 2rem;
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+    }
+
+    .row3 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+
+      .radio-group {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        input {
+          width: 2rem;
+          margin: auto 1rem auto 0rem;
+        }
+
+        label {
+          margin: auto;
+        }
+      }
+    }
+
+    .row4 {
+      margin-top: 1rem;
+
+      textarea {
+        height: 8rem;
+        padding: 1rem;
+      }
+    }
+  }
+
+  button {
+    padding: 1.2rem;
+    width: 100%;
+    margin-top: 1.5rem;
+    background-color: $--clr-text;
+    border: 2px solid $--clr-white;
+    font-family: $--ff-body;
+    font-size: $--fs-button;
+    color: $--clr-light;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $--clr-white;
+      color: $--clr-text;
+    }
+  }
+}
+
+// MEDIA QUERIES
+
+@media screen and (width < 1700px) {
+  .booking-form {
+    margin: 5rem auto 0rem auto;
+  }
+
+  .row1,
+  .row2,
+  .row4 {
+    flex-direction: column;
+  }
+}
+
+@media screen and (width < 1200px) {
+  .booking-form {
+    width: 90%;
+  }
+}
+
+@media screen and (width < 800px) {
+  .booking-form {
+    margin: 2rem auto;
+    padding: 3rem;
+
+    .form-wrapper {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (width < 485px) {
+  p {
+    line-height: 4rem;
+  }
+}

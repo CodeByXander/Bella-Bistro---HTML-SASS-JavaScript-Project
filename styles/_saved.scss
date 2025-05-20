@@ -1,0 +1,70 @@
+.saved-hero-cover {
+  height: 40vh;
+  width: 100%;
+
+  background-image: url(../Assets/Images/menu-header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.saved-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  height: 80%;
+
+  color: $--clr-text;
+
+  .saved-hero-left {
+    min-height: 100%;
+    flex: 1 1 40rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    h2 {
+      font-family: $--ff-headings;
+      font-size: $--fs-heading-2;
+      margin-bottom: 2.5rem;
+    }
+  }
+  .saved-hero-right {
+    flex: 1 1 40rem;
+  }
+}
+
+.saved-container {
+  width: 80%;
+  margin: 5rem auto;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-family: $--ff-body;
+  font-size: $--fs-body;
+  color: $--clr-text;
+  padding: 1rem 0rem;
+
+  img {
+    height: 200px;
+  }
+}
+
+.clear-list {
+  margin-top: 2rem;
+  padding: 1.4rem 4rem;
+  cursor: pointer;
+  font-family: $--ff-body;
+  font-size: $--fs-button;
+}
+
+.hidden {
+  display: none;
+}
